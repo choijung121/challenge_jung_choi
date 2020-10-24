@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+
+    <title>BYU Dance</title>
+  </head>
+  <body>
+    <nav>
+      <a class = "home" href="index.html" style = "text-decoration: none">
+        <h1>BYU<h1>
+        <h2 class = "subHeader">Departement of Dance</h2>
+      </a>
+      <!-- desktop style nav -->
+      <ul class = "navlink">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="form.html">Forms</a>
+        </li>
+        <li>
+          <a href="gallery.html">Gallery</a>
+        </li>
+      </ul>
+      <!-- mobile style nav -->
+      <div class="burgerStyle">
+        <div class="menu1"></div>
+        <div class="menu2"></div>
+        <div class="menu3"></div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="titleDancers">
+      <h1>Images of Department of Dance Students</h1>
+    </div>
+
+    <div class="dancers">
+      <section class="dancersImages">
+        <div class="imageD">
+          <img src="/images/image10.jpeg">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image11.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image12.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image13.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image14.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image15.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image16.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image17.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image18.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image19.jpeg" onclick="myFunction(this)">
+        </div>
+
+        <div class="imageD">
+          <img src="/images/image20.jpeg" onclick="myFunction(this)">
+        </div>
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- <script>
+    function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+    }
+    </script> -->
+
+
+    <footer>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p class = "contact1">BYU Department of Dance</p>
+        <p class = "contact1">294 RB</p>
+        <p class = "contact1">Provo, UT 84604</p>
+        <p class = "contact1">801-422-5086</p>
+        <!-- <p class = "contact1" style="text-decoration: none"><a href = "mailto:dance@byu.edu">dance.@byu.edu</a></p> -->
+      </div>
+      <div class="social">
+        <h2>Connect with Us</h2>
+        <p class = "contact1"><ion-icon name = "logo-facebook"></ion-icon>&nbsp;Facebook</p>
+        <p class = "contact1"><ion-icon name = "logo-instagram"></ion-icon>&nbsp;Instagram</p>
+        <p class = "contact1"><ion-icon name="logo-youtube"></ion-icon>&nbsp;Youtube</p>
+      </div>
+    </footer>
+
+
+
+
+    <script src = "app.js"></script>
+  </body>
+</html>

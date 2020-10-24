@@ -1,0 +1,373 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+footer{
+  background-color: #1c498c;
+  color: white;
+  column-count: 2;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 5vh;
+  /* padding-left: 20%; */
+  display: table-cell;
+  /* width: 50%; */
+  position: relative;
+  display: flex;
+  z-index: -1;
+}
+.contact{
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* position: relative;
+  display: flex; */
+  z-index: -1;
+}
+.social{
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* position: relative;
+  display: flex; */
+  z-index: -1;
+}
+.contact1{
+  line-height: 20px;
+  z-index: -1;
+}
+
+.subHeader{
+  font-size: 20px;
+  text-align: left;
+}
+.home{
+  text-decoration: none;
+  /* color: white; */
+  color: #1c498c;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background: #1c498c; */
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 20px;
+  min-height: 15vh;
+  z-index: 1;
+}
+.navlink{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  color: #1c498c !important;
+  z-index: 1;
+}
+.navlink li{
+  list-style: none;
+  /* color: #1c498c; */
+}
+.navlink a{
+  text-decoration: none;
+  /* color: white; */
+  color: #1c498c;
+  /* font-weight: bold; */
+}
+.burgerStyle{
+  display: none;
+  cursor: pointer;
+}
+.burgerStyle div{
+  width: 25px;
+  height: 2px;
+  /* background-color: white; */
+  background-color: #1c498c;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .navlink{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 650px) {
+  body{
+    overflow-x: hidden;
+  }
+  .navlink{
+    position: absolute;
+    right: 0px;
+    height: 85vh;
+    top: 15vh;
+    background: #1c498c;
+    filter: opacity(95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .navlink li{
+    opacity: 0;
+    color: white;
+  }
+  .navlink a{
+    text-decoration: none;
+    color: white;
+    /* color: #1c498c; */
+    /* font-weight: bold; */
+  }
+  .burgerStyle{
+    display: block;
+  }
+  .facultyName{
+    padding-top: 40px;
+  }
+  .facultyImage img{
+    padding-bottom: 20px;
+  }
+  .dancersImages img{
+    display: grid;
+    grid-template: auto auto auto auto / 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navlinkfade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .menu1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .menu2{
+  opacity: 0;
+}
+.toggle .menu3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+/* css index.html body content */
+.container{
+  position: relative;
+  text-align: center;
+  /* color: white; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: -1;
+}
+.image{
+  height: 60%;
+  width: 100%;
+  z-index: -1;
+}
+.image img {
+  width: 80%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  z-index: -1;
+  /* filter: opacity(0.8); */
+  filter: brightness(52%);
+  margin: -5% 0;
+}
+.imageText{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  text-align: center;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8em;
+  color: white;
+}
+.dancers2{
+  padding-left: 9%;
+}
+.dancersImages2{
+  display: grid;
+  grid-template: auto auto auto auto / 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 45%;
+  display: inline-block;
+  align-items: center;
+}
+.imageA img{
+  width: 100%;
+  object-fit: contain;
+  padding: 20px;
+}
+.imageA:hover{
+  filter: opacity(0.5);
+}
+.visitLink{
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* about.html */
+.faculty{
+  color: black;
+  margin: 50px;
+  padding-left: 10px;
+}
+.aboutImage{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: -1;
+  filter: brightness(130%);
+}
+.facultyImage img{
+  width: 300px;
+  float: left;
+  align: left;
+  padding-right: 40px;
+  border-radius: 60%;
+
+}
+.facultyText{
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.facultyBio{
+  display: grid;
+  background-color: #d4d5d9;
+  padding: 20px;
+}
+.imageTextAbout{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  text-align: center;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7em;
+  color: white;
+}
+
+
+/* form.html */
+.subtext{
+  margin: auto;
+  /* padding: 40px; */
+  padding-left: 16.5%;
+  padding-right: 16.5%;
+  display: flex;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formAudition{
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: -1;
+}
+.form{
+  width: 50%;
+  position: relative;
+  height: 50px;
+  /* z-index: -1; */
+}
+.form input{
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+  border: none;
+  outline: none;
+}
+.form label{
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+.nameForm{
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.form input:focus + .nameLabel .nameForm, .form input:valid + .nameLabel .nameForm{
+  transform: translateY(-150%);
+}
+.file input{
+  line-height: 20px;
+}
+
+.imageTextForm{
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  text-align: center;
+  top:30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7em;
+  color: white;
+}
+
+
+/* gallery.html */
+.dancers{
+  padding:60px;
+}
+.dancersImages{
+  display: grid;
+  grid-template: auto auto auto auto / 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.dancers img{
+  filter: brightness(100%);
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.imageD img{
+  width: 100%;
+  object-fit: contain;
+  padding: 20px;
+}
+.titleDancers{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1c498c;
+  color: white;
+  padding: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
